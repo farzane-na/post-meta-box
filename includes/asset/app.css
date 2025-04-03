@@ -1,0 +1,28 @@
+.extra-meta-box-wrapper{
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px -3px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 0;
+    border: 1px solid #ccc;
+}
+.extra-meta-box-wrapper h5{
+    position: relative;
+    padding-right: 15px;
+}
+.extra-meta-box-wrapper h5::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    right: 0;
+    background-color: #101010;
+    border-radius: 5px;
+}
+.extra-meta-box-wrapper p{
+    padding-right: 15px;
+}
