@@ -14,6 +14,11 @@
  * Domain Path:       /languages
  */
 
+ function extra_meta_box_load_textdomain() {
+    load_plugin_textdomain('extra-meta-box', false, dirname(plugin_basename(__FILE__)) . '/languages');
+}
+add_action('plugins_loaded', 'extra_meta_box_load_textdomain');
+
  define("PLUGIN_DIR_PATH",plugin_dir_path( __FILE__ ));
  define("PLUGIN_DIR_URL",plugin_dir_url( __FILE__ ));
  define("META_PLUGIN_VERSION","1.0.0");

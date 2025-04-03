@@ -2,7 +2,7 @@
 add_action( "add_meta_boxes",function(){
     add_meta_box(
         "post-extra-meta-box",
-        "post extra meta box",
+        __("post extra meta box","extra-meta-box"),
         function($post){
             $post_extra_meta_box_title=get_post_meta( $post->ID, "post_extra_meta_box_title", true );
             $post_extra_meta_box_description=get_post_meta( $post->ID, "post_extra_meta_box_description", true );
